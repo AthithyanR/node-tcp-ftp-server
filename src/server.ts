@@ -12,7 +12,7 @@ const sockets = new Map<string, CustomSocket>();
 
 const rl = createInterface(stdin);
 rl.on("line", (line) => {
-  console.log("readline", line, sockets.size);
+  console.log(`sending ${line} to clients: `, sockets.size);
 
   for (const [_id, sock] of sockets.entries()) {
     sock.write(line + "\n");
