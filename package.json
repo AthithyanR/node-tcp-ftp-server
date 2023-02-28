@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon",
-    "build": "tsc",
+    "build": "estc",
     "start": "node dist/server.js"
   },
   "repository": {
