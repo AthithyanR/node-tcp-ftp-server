@@ -28,3 +28,16 @@ async function httpRequest(
     request.end();
   });
 }
+
+
+// https.request({
+//   host: "www.stackoverflow.com",
+//   method: "GET",
+//   path: "/questions/38533580/nodejs-how-to-promisify-http-request-reject-got-called-two-times"
+// }, (resp) => {
+//   resp.on('data', (chunk) => sock.write(chunk));
+//   resp.on('end', () =>   sock.end())
+// }).end()
+// const rs = createReadStream(path.join(process.cwd(), "/src/server.ts"));
+// rs.on("data", (chunk) => sock.write(chunk));
+// rs.on("end", () => sock.write("hello from server!\n"));
